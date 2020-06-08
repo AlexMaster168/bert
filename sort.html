@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<!-- <link rel="shortcut icon" type="image/png" href="img/fav.ico"/> -->
+	<title>Craft beer</title>
+</head>
+<body>
+	<header class='header'>
+		<div class="container">
+			<div class="header__wrap">
+				<div class="header__top">
+					<a class="header__logo" href="javascript:void(0);">
+						<img src="./img/logo_txt.svg" alt="Craft beer">
+						<span class='logo-text link'>клуб солоду та хмелю</span>	
+					</a>
+					<div class='header__aside'>
+						<div class="header__langs">
+							<a class='link active' href="#">Ua</a>/<a class='link' href="#">Ru</a>
+						</div>
+						<button class='header__btn btn'>Вступити</button>
+						<button class="burger-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+			<div class="header__inner">
+				<button class='header__btn btn'>Вступити</button>
+				<div class="header__langs">
+					<a class='link active' href="#">Ua</a>/<a class='link' href="#">Ru</a>
+				</div>
+			</div>
+			<ul class="header__bottom">
+				<li class='header__item'>
+					<a class='link' href="#">Пиворані</a>
+				</li>
+				<li class='header__item'>
+					<a class='link' href="#">Паби</a>
+				</li>
+				<li class='header__item'>
+					<a class='link' href="#">Найближчий паб</a>
+				</li>
+				<li class='header__item'>
+					<a class='link' href="#">Історія крафтового пива</a>
+				</li>
+				<li class='header__item'>
+					<a class='active link' href="#">Сорти пива</a>
+				</li>
+				<li class='header__item'>
+					<a class='link' href="#">Блог</a>
+				</li>
+				<li class='header__item'>
+					<a class='link' href="#">Про клуб</a>
+				</li>
+				<li class='header__item'>
+					<a class='link' href="#">Контакты</a>
+				</li>
+			</ul>
+			<ul class='header__contacts'>
+				<li class='contact-item tel'>
+					<a href="tel:+38 067 543 54 5" class='link'>+38 067 543 54 5</a>
+				</li>
+				<li class='contact-item envelope'>
+					<a href="mailto:сraftbeer@mail" class='link'>сraftbeer@mail</a>
+				</li>
+				<li class='contact-item clock'>Пн-Пт 09:00-18:00</li>
+			</ul>
+		</div>
+	</header>
+	<main class='sort-page'>
+		<div class="breadcrumbs__wrap">
+			<div class="container">
+				<div class="breadcrumbs">
+					<a href="#">Головна</a>
+					<span>&#8594;</span>
+					<span class='breadcrumbs__active'>Сорти пива</span>
+				</div>
+			</div>
+		</div>
+		<section class='sort-header'>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<h1 class='headline'>Чеський світлий лагер</h1>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="sort__props">
+							<div class="sort__prop">
+								<div class="sort__label">
+									<span>OG</span>	
+									<span>7-11%</span>
+								</div>
+							</div>
+							<div class="sort__prop">
+								<div class="sort__label">
+									<span>ABV</span>	
+									<span>3,0-4,1%</span>
+								</div>
+							</div>
+							<div class="sort__prop">
+								<div class="sort__label">
+									<span>IBU</span>	
+									<span>20-35%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class='sort-content'>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 order-2 order-xl-1 col-xl-3">
+						<div class="share">
+							<p class='share__text'>Поділитись:</p>
+							<div class="socials">
+								<a href="#" class='social-link'>
+									<svg><use xlink:href="#i-fb"></use></svg>
+								</a>
+								<a href="#" class='social-link'>
+									<svg><use xlink:href="#i-tw"></use></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 order-1 order-xl-2 col-xl-9">
+						<ul class="tabs">
+							<li class='tab-li'><a class="link tab-link" href="#tab-description">
+								<svg><use xlink:href="#i-description"></use></svg>
+								Опис
+							</a></li>
+							<li class='tab-li'><a class="link tab-link" href="#tab-bewery">
+								<svg><use xlink:href="#i-bewery"></use></svg>
+								Пивоварні
+							</a></li>
+							<li class='tab-li'><a class="link tab-link" href="#tab-pubs">
+								<svg><use xlink:href="#i-pub"></use></svg>
+								В пабах
+							</a></li>
+							<li class='tab-li'><a class="link tab-link" href="#tab-comments">
+								<svg><use xlink:href="#i-star"></use></svg>
+								Відгуки
+							</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-xl-3"></div>
+					<div class="col-12 col-xl-9">
+						<div id='tab-description' class="tab-content">
+							<p class='text'>Легкотіле пиво з яскраво вираженою хмелевою гірчинкою, не міцне. Дуже добре освіжає в літню спеку. В ароматі відчуваються нотки хмелю, хліба, пряні трави, іноді карамель. В залежності від пивоварні баланс злегка може бути зміщений в сторону хмелю або солоду. Смак округлений, відчутно солодовий, пряний, з гірчинкою.</p>
+							<p class='text'>По чеській класифікації відноситься до типу “вичепні”(výčepní). Цей стиль більш легкий ніж інший чеський вид пива - “лєжак”(ležák). Ці два стилі були створені Йозефом Ґроллем в 1840-х роках. Для виготовлення використовується м’яка вода, солод пілс, жатецький хміль, лагерні дріжджі.</p>
+						</div>
+						<div id="tab-bewery" class="tab-content">
+							<h3 class='h3 tab-title'>Пивоварні що варять цей сорт</h3>
+							<div class="slider-wrap">
+								<div class="sorts__slider slider">
+									<a href='#' class="slide card">
+										<img class='card__pic' src="./img/assets/pub.png" alt="">
+										<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+										<div class="card__details">
+											<span class='stars'>5</span>
+											<span class='comments'>5</span>
+										</div>
+										<button class='btn btn_transparent'>Деталі</button>
+									</a>
+									<a href='#'class="slide card">
+										<img class='card__pic' src="./img/assets/pub.png" alt="">
+										<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+										<div class="card__details">
+											<span class='stars'>5</span>
+											<span class='comments'>5</span>
+										</div>
+										<button class='btn btn_transparent'>Деталі</button>
+									</a>
+									<a href='#'class="slide card">
+										<img class='card__pic' src="./img/assets/pub.png" alt="">
+										<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+										<div class="card__details">
+											<span class='stars'>5</span>
+											<span class='comments'>5</span>
+										</div>
+										<button class='btn btn_transparent'>Деталі</button>
+									</a>
+									<a href='#' class="slide card">
+										<img class='card__pic' src="./img/assets/pub.png" alt="">
+										<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+										<div class="card__details">
+											<span class='stars'>5</span>
+											<span class='comments'>5</span>
+										</div>
+										<button class='btn btn_transparent'>Деталі</button>
+									</a>
+									<a href='#'class="slide card">
+										<img class='card__pic' src="./img/assets/pub.png" alt="">
+										<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+										<div class="card__details">
+											<span class='stars'>5</span>
+											<span class='comments'>5</span>
+										</div>
+										<button class='btn btn_transparent'>Деталі</button>
+									</a>
+								</div>
+								<button class='btn sorts-slider__btn'>Переглянути всі</button>
+							</div>
+						</div>
+						<hr class='line'>
+						<div id="tab-pubs" class="tab-content">
+							<h3 class='h3 tab-title'>Наявність в пабах</h3>
+							<div class="slider-wrap">
+								<div class="sorts__slider slider">
+									<a href='#' class="slide card">
+										<img class='card__pic' src="./img/assets/pub.png" alt="">
+										<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+										<div class="card__details">
+											<span class='stars'>5</span>
+											<span class='comments'>5</span>
+										</div>
+										<button class='btn btn_transparent'>Деталі</button>
+									</a>
+									<a href='#' class="slide card">
+										<img class='card__pic' src="./img/assets/pub.png" alt="">
+										<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+										<div class="card__details">
+											<span class='stars'>5</span>
+											<span class='comments'>5</span>
+										</div>
+										<button class='btn btn_transparent'>Деталі</button>
+									</a>
+									<a href='#' class="slide card">
+										<img class='card__pic' src="./img/assets/pub.png" alt="">
+										<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+										<div class="card__details">
+											<span class='stars'>5</span>
+											<span class='comments'>5</span>
+										</div>
+										<button class='btn btn_transparent'>Деталі</button>
+									</a>
+									<a href='#' class="slide card">
+										<img class='card__pic' src="./img/assets/pub.png" alt="">
+										<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+										<div class="card__details">
+											<span class='stars'>5</span>
+											<span class='comments'>5</span>
+										</div>
+										<button class='btn btn_transparent'>Деталі</button>
+									</a>
+									<a href='#' class="slide card">
+										<img class='card__pic' src="./img/assets/pub.png" alt="">
+										<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+										<div class="card__details">
+											<span class='stars'>5</span>
+											<span class='comments'>5</span>
+										</div>
+										<button class='btn btn_transparent'>Деталі</button>
+									</a>
+								</div>
+								<button class='btn sorts-slider__btn'>Переглянути всі</button>
+							</div>
+						</div>
+						<div id="tab-comments" class="tab-content">
+							<section class='commetns-section'>
+								<h3 class='h3 tab-title'>Відгуки</h3>
+								<div class="comments-block">
+									<div class="comments-block__header">
+										<span class='comments-block__total'>Коментарі 4</span>
+										<span class='comments-block__user'>Христина</span>
+									</div>
+									<div class="comments-block comments-block__new">
+										<div class="row">
+											<div class="col-auto">
+												<img class='comments-block__avatar' src="./img/assets/news.jpg" alt="">
+											</div>
+											<div class='col'>
+												<div class="rating"></div>
+												<textarea class='comments-block__textarea' name="" id="" placeholder="Приєднайся до обговорення..."></textarea>
+												<button class="comments-block__btn btn btn_transparent">Залишити коментар</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comments-block">
+									<div class="row">
+										<div class="col-auto">
+											<img class='comments-block__avatar' src="./img/assets/news.jpg" alt="">
+										</div>
+										<div class='col'>
+											<div class="rating" data-rate-value=6></div>
+											<span class="comments-block__name">Adam Madam</span>
+											<span class="comments-block__time">2 тижні тому</span>
+											<p class='comments-block__text'>Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово! Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово! Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово!Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово!</p>
+											<button class="btn btn_transparent">Відповісти</button>
+										</div>
+									</div>
+								</div>
+								<div class="comments-block">
+									<div class="row">
+										<div class="col-auto">
+											<img class='comments-block__avatar' src="./img/assets/news.jpg" alt="">
+										</div>
+										<div class='col'>
+											<div class="rating" data-rate-value=6></div>
+											<span class="comments-block__name">Adam Madam</span>
+											<span class="comments-block__time">2 тижні тому</span>
+											<p class='comments-block__text'>Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово! Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово! Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово!Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово!</p>
+											<button class="btn btn_transparent">Відповісти</button>
+										<div class="comments-block comments-block__inner">
+											<div class="row">
+												<div class="col-auto">
+													<img class='comments-block__avatar' src="./img/assets/news.jpg" alt="">
+												</div>
+												<div class='col'>
+													<span class="comments-block__name">Adam Madam</span>
+													<span class="comments-block__time">2 тижні тому</span>
+													<p class='comments-block__text'>Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово! Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово! Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово!Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово!</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comments-block closed">
+									<div class="row">
+										<div class="col-auto">
+											<img class='comments-block__avatar' src="./img/assets/news.jpg" alt="">
+										</div>
+										<div class='col'>
+											<div class="rating" data-rate-value=5></div>
+											<span class="comments-block__name">Adam Madam</span>
+											<span class="comments-block__time">2 тижні тому</span>
+											<p class='comments-block__text multiline-text-overflow'>Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово! Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово! Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово!Прекрасний паб і пиво смачне. Дякую з арну атмосферу, все було чудово!</p>
+											<div class='comments-block__closed-btn'>
+												<span>Разгорнути</span>
+											</div>
+											<button class="btn btn_transparent">Відповісти</button>
+											<div class="comments-block comments-block__inner comments-block__new">
+												<div class="row">
+													<div class="col-auto">
+														<img class='comments-block__avatar' src="./img/assets/news.jpg" alt="">
+													</div>
+													<div class='col'>
+														<textarea class='comments-block__textarea' name="" id="" placeholder="Приєднайся до обговорення..."></textarea>
+														<button class="comments-block__btn btn btn_transparent">Залишити коментар</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="pagination">
+							<div class="pagination__pages">
+								<a href="#" class='pagination__arrow left'>&#60;</a>
+								<a href="#" class='pagination__page'>1</a>
+								<a href="#" class="pagination__page active">2</a>
+								<a href="#" class='pagination__page'>3</a>
+								<span class='pagination__page'>...</span>
+								<a href="#" class='pagination__page'>125</a>
+								<a href="#" class='pagination__arrow right'>&#62;</a>
+							</div>
+							<button class="pagination__btn btn btn_transparent">
+								<svg><use xlink:href="#i-reload"></use></svg>
+								Завантажити більше
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+	</main>
+	<footer class='footer'>
+		<div class="container">
+			<div class="footer__top">
+				<div id="btn-scroll"><svg><use xlink:href="#i-arrow"></use></svg></div>
+				<div class="line"></div>
+				<img class="footer__logo" src="./img/logo_bw.svg" alt="Craft beer">
+			</div>
+			<div class="footer__content">
+				<div class="footer__wrap">
+					<div class="footer__item">
+						<h6 class="h6 footer__subtitle">Контактна інформація</h6>
+						<ul>
+							<li class='contact-item tel'>
+								<a href="tel:+38067543545" class='link'>+38 (067) 543-54-5</a>
+							</li>
+							<li class='contact-item envelope'>
+								<a href="mailto:сraftbeer@mail" class='link'>сraftbeer@mail</a>
+							</li>
+							<li class='contact-item clock'>Пн-Пт 09:00-18:00</li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h6 class="h6 footer__subtitle">Ми в соціальних мережах</h6>
+						<div class="socials">
+							<a href="#" class='social-link'>
+								<img src="./img/fb.svg" alt="">
+							</a>
+							<a href="#" class='social-link'>
+								<img src="./img/yt.svg" alt="">
+							</a>
+							<a href="#" class='social-link'>
+								<img src="./img/in.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__wrap">
+					<div class="footer__item">
+						<h6 class="h6 footer__subtitle">Підписатись на розсилку</h6>
+						<form class='footer__form'>
+							<input class='form__item input-text' type="mail" placeholder='Ваш e-mail'>
+							<button class='btn btn_100 form__item' type='submit'>Підписатись</button>
+						</form>
+					</div>
+					<div class="footer__item">
+						<h6 class="h6 footer__subtitle">Інформація</h6>
+						<ul class='contact-list'>
+							<li class='list-item'>
+								<a href="#" class='link'>Блог</a>
+							</li>
+							<li class='list-item'>
+								<a href="#" class='link'>Про клуб</a>
+							</li>
+							<li class='list-item'>
+								<a href="#" class='link'>Контакти</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copyrights">© 2018 craftBeer All rights reserved.</div>
+		</div>
+	</footer>
+	<div id="popup-login" class="overlay hidden">
+		<div class="popup popup_login">
+			<img class='popup__pic' src="./img/popup_logo.png" alt="craftBeer logo">
+			<span class='cross'></span>	
+			<h3 class='h3'>Увійти</h3>
+			<p class='small'>Щоб залишити відгук</p>
+			<form>
+				<input class='input popup__input' type="email" placeholder="Електронна пошта">
+				<input class='input popup__input' type="text" placeholder="Пароль">
+				<a href="#" class='link popup_login__forget extra-small'>Забули пароль?</a>
+				<button type="submit" class="btn btn_100">увійти</button>
+			</form>
+			<button class="btn btn_100 btn_fb">увійти з facebook</button>
+			<a href="#" class='link extra-small'>Реєстрація</a>
+		</div>
+	</div>		
+	<div id="popup-register" class="overlay hidden">
+		<div class="popup popup_register">
+			<img class='popup__pic' src="./img/popup_logo.png" alt="craftBeer logo">
+			<span class='cross'></span>	
+			<h3 class='h3'>Вступити до клубу</h3>
+			<p class='small'>Зареєструйся, щоб приєднатись до справжніх гурманів, яким не потрібно імітації, тільки справжнє, крафтове пиво.</p>
+			<form>
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<input class='input popup__input' type="text" placeholder="Ім'я">
+						<input class='input popup__input' type="email" placeholder="Електронна пошта">
+					</div>
+					<div class="col-12 col-lg-6">
+						<input class='input popup__input' type="text" placeholder="Пароль">
+						<input class='input popup__input' type="text" placeholder="Підтвердити пароль">
+					</div>
+				</div>
+				<label class='popup__label'>
+					<input type="checkbox">	
+					Підписатись на розсилку	
+				</label>
+				<label class='popup__label'>
+					<input type="checkbox">	
+					Реєструючись, я погоджуюсь з
+					<a href="#" class='link extra-small'>умовами і політикою конфіденційності</a>
+				</label>
+				<button type="submit" class="btn btn_100">Зареєструватись</button>
+			</form>
+			<button class="btn btn_100 btn_fb">увійти з facebook</button>
+			<span class='small'>Вже зареєстрований?
+				<a href="#" class='link extra-small'>ВХІД</a>
+			</span>
+		</div>
+	</div>
+	<div id="loader" class='loader hidden'><svg><use xlink:href="#loader-icon"></use></svg></div>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="js/rater.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/sprite.js"></script>
+	<script>
+$( document ).ready(function() {
+
+	// rating stars
+	var ratingOptions = {
+		step_size: 1,
+		cursor: 'pointer',
+		initial_value: 0   
+	};
+
+	$(".rating").rate(ratingOptions);
+
+
+// sorts-slider
+
+$('.sorts__slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: false,
+    arrows: true,
+    prevArrow:"<svg class='arrow arrow_left'><use xlink:href='#i-left'></use></svg>",
+    nextArrow:"<svg class='arrow arrow_right'><use xlink:href='#i-right'></use></svg>",
+    responsive: [
+        {
+		breakpoint: 840,
+		settings: {
+			slidesToShow: 3,
+			}
+		},
+		{
+        breakpoint: 670,
+        settings: {
+            slidesToShow: 2,
+            }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+            }
+        },
+    ]
+});
+
+});
+	</script>
+	</body>
+	</html>

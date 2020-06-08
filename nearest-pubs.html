@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<!-- <link rel="shortcut icon" type="image/png" href="img/fav.ico"/> -->
+	<title>Craft beer</title>
+</head>
+<body>
+	<header class='header'>
+		<div class="container">
+			<div class="header__wrap">
+				<div class="header__top">
+					<a class="header__logo" href="javascript:void(0);">
+						<img src="./img/logo_txt.svg" alt="Craft beer">
+						<span class='logo-text link'>клуб солоду та хмелю</span>	
+					</a>
+					<div class='header__aside'>
+						<div class="header__langs">
+							<a class='link active' href="#">Ua</a>/<a class='link' href="#">Ru</a>
+						</div>
+						<button class='header__btn btn'>Вступити</button>
+						<button class="burger-menu"><span></span></button>
+					</div>
+				</div>
+			</div>
+			<div class="header__inner">
+				<button class='header__btn btn'>Вступити</button>
+				<div class="header__langs">
+					<a class='link active' href="#">Ua</a>/<a class='link' href="#">Ru</a>
+				</div>
+			</div>
+			<ul class="header__bottom">
+				<li class='header__item'>
+					<a class='link' href="#">Пиворані</a>
+				</li>
+				<li class='header__item'>
+					<a class='link' href="./pubs.html">Паби</a>
+				</li>
+				<li class='header__item'>
+					<a class='link' href="./nearest-pubs.html">Найближчий паб</a>
+				</li>
+				<li class='header__item'>
+					<a class='link' href="./history.html">Історія крафтового пива</a>
+				</li>
+				<li class='header__item'>
+					<a class='link' href="./sorts.html">Сорти пива</a>
+				</li>
+				<li class='header__item'>
+					<a class='link' href="./blog.html">Блог</a>
+				</li>
+				<li class='header__item'>
+					<a class='link' href="#">Про клуб</a>
+				</li>
+				<li class='header__item'>
+					<a class='link' href="./contacts.html">Контакты</a>
+				</li>
+			</ul>
+			<ul class='header__contacts'>
+				<li class='contact-item tel'>
+					<a href="tel:+38 067 543 54 5" class='link'>+38 067 543 54 5</a>
+				</li>
+				<li class='contact-item envelope'>
+					<a href="mailto:сraftbeer@mail" class='link'>сraftbeer@mail</a>
+				</li>
+				<li class='contact-item clock'>Пн-Пт 09:00-18:00</li>
+			</ul>
+		</div>
+	</header>
+	<main class='nearest-pubs'>
+		<div class="breadcrumbs__wrap">
+			<div class="container">
+				<div class="breadcrumbs">
+					<a href="#">Головна</a>
+					<span>&#8594;</span>
+					<span class='breadcrumbs__active'>Сорти пива</span>
+				</div>
+			</div>
+		</div>
+		<section class='nearest-pubs__header'>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-xl-4">
+						<h1 class='headline'>Найближчий паб</h1>
+					</div>
+					<div class="col-12 col-xl-8">
+						<div class="craft-search">
+							<div class="craft-search__dropdowns">
+								<div class="craft-search__dropdown">м. Рудно</div>
+								<div class="craft-search__dropdown">
+									<svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.5 0C3.34091 0 0 3.34091 0 7.5 0 11.6591 3.34091 15 7.5 15c4.1591 0 7.5-3.3409 7.5-7.5C15 3.34091 11.6591 0 7.5 0zm4.3295 5.14773L6.375 10.8068c-.06818.0682-.13636.1023-.23864.1023-.10227 0-.20454-.0341-.23863-.1023L3.23864 7.94318 3.17045 7.875c-.06818-.06818-.10227-.17045-.10227-.23864 0-.06818.03409-.17045.10227-.23863l.47728-.47728c.13636-.13636.34091-.13636.47727 0l.03409.0341 1.875 2.01136c.06818.06818.17046.06818.23864 0l4.56817-4.73864h.0341c.1364-.13636.3409-.13636.4773 0l.4772.47728c.1364.10227.1364.30681 0 .44318z" fill="url(#paint0_linear)"/>
+										<defs>
+											<linearGradient id="paint0_linear" y1="7.5" x2="15" y2="7.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#EFB41C"/>
+											<stop offset="1" stop-color="#FF8A00"/>
+											</linearGradient>
+										</defs>
+									</svg>
+									Асортимент крафтового пива
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class='nearest-pubs__search-mobile'>
+			<div class="container">
+				<div class="craft-search__btns">
+					<div class="search-mobile__item show-list">
+						<button class='btn_reset'><svg><use xlink:href="#i-list"></use></svg></button>
+						<span>Показати список</span>
+					</div>
+					<div class="search-mobile__item select-city">Вибір міста</div>
+				</div>
+			</div>
+		</section>
+		<section class='nearest-pubs__content'>
+			<div class="container">
+				<div class="row">
+					<div class="col-8">
+						<div class="nearest-pubs__map">
+							<img src="./img/assets/capture.png" alt="">
+							<div class="map-card active active_top">
+								<span class='cross small'></span>	
+								<div class="map-card__wrap">
+									<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+									<div class="map-card__content">
+										<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+										<div class="card__details">
+											<span class='stars'>5</span>
+											<span class='comments'>5</span>
+										</div>
+										<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+										<div><span class="card__label open">Зараз відчинено</span>	</div>
+									</div>
+								</div>
+								<div class="map-card__footer">
+									<button class='btn btn_transparent'>Деталі</button>
+								</div>
+							</div>
+							<div class="nearest-pubs__popup popup hidden">
+								<span class='cross cross_sm'></span>	
+								<img src="./img/warning.svg" alt="">
+								<p>На жаль, вибрані тобою сорти пива вже випили в усіх пабах твого міста</p>
+								<button class='btn'>Обрати інше</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="nearest-pubs__cards">
+							<div class="map-card selected">
+								<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+								<div class="map-card__content">
+									<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+									<div class="card__details">
+										<span class='stars'>5</span>
+										<span class='comments'>5</span>
+									</div>
+									<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+									<div><span class="card__label open">Зараз відчинено</span>	</div>
+									<button class='map-card__btn btn btn_transparent'>Деталі</button>
+								</div>
+							</div>
+							<div class="map-card">
+								<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+								<div class="map-card__content">
+									<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+									<div class="card__details">
+										<span class='stars'>5</span>
+										<span class='comments'>5</span>
+									</div>
+									<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+									<div><span class="card__label close">Зараз відчинено</span>	</div>
+									<button class='map-card__btn btn btn_transparent'>Деталі</button>
+								</div>
+							</div>
+							<div class="map-card">
+								<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+								<div class="map-card__content">
+									<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+									<div class="card__details">
+										<span class='stars'>5</span>
+										<span class='comments'>5</span>
+									</div>
+									<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+									<div><span class="card__label open">Зараз відчинено</span>	</div>
+									<button class='map-card__btn btn btn_transparent'>Деталі</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nearest-pubs__map-mobile">
+				<img src="./img/assets/capture.png" alt="">
+				<div class="map-card active active_top">
+					<span class='cross small'></span>	
+					<div class="map-card__wrap">
+						<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+						<div class="map-card__content">
+							<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+							<div class="card__details">
+								<span class='stars'>5</span>
+								<span class='comments'>5</span>
+							</div>
+							<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+							<div><span class="card__label open">Зараз відчинено</span>	</div>
+						</div>
+					</div>
+					<div class="map-card__footer">
+						<button class='btn btn_transparent'>Деталі</button>
+					</div>
+				</div>
+				<div class="nearest-pubs__cards-mobile hidden">
+					<a class="map-card">
+						<span class="map-card__more"></span>
+						<div class="map-card__wrap">
+							<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+							<div class="map-card__content">
+								<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+								<div class="card__details">
+									<span class='stars'>5</span>
+									<span class='comments'>5</span>
+								</div>
+								<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+								<div><span class="card__label open">Зараз відчинено</span>	</div>
+							</div>
+						</div>
+					</a>
+					<a class="map-card">
+						<span class="map-card__more"></span>
+						<div class="map-card__wrap">
+							<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+							<div class="map-card__content">
+								<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+								<div class="card__details">
+									<span class='stars'>5</span>
+									<span class='comments'>5</span>
+								</div>
+								<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+								<div><span class="card__label open">Зараз відчинено</span>	</div>
+							</div>
+						</div>
+					</a>
+					<a class="map-card">
+						<span class="map-card__more"></span>
+						<div class="map-card__wrap">
+							<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+							<div class="map-card__content">
+								<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+								<div class="card__details">
+									<span class='stars'>5</span>
+									<span class='comments'>5</span>
+								</div>
+								<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+								<div><span class="card__label open">Зараз відчинено</span>	</div>
+							</div>
+						</div>
+					</a>
+					<a class="map-card">
+						<span class="map-card__more"></span>
+						<div class="map-card__wrap">
+							<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+							<div class="map-card__content">
+								<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+								<div class="card__details">
+									<span class='stars'>5</span>
+									<span class='comments'>5</span>
+								</div>
+								<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+								<div><span class="card__label open">Зараз відчинено</span>	</div>
+							</div>
+						</div>
+					</a>
+					<a class="map-card">
+						<span class="map-card__more"></span>
+						<div class="map-card__wrap">
+							<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+							<div class="map-card__content">
+								<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+								<div class="card__details">
+									<span class='stars'>5</span>
+									<span class='comments'>5</span>
+								</div>
+								<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+								<div><span class="card__label open">Зараз відчинено</span>	</div>
+							</div>
+						</div>
+					</a>
+					<a class="map-card">
+						<span class="map-card__more"></span>
+						<div class="map-card__wrap">
+							<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+							<div class="map-card__content">
+								<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+								<div class="card__details">
+									<span class='stars'>5</span>
+									<span class='comments'>5</span>
+								</div>
+								<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+								<div><span class="card__label open">Зараз відчинено</span>	</div>
+							</div>
+						</div>
+					</a>
+					<a class="map-card">
+						<span class="map-card__more"></span>
+						<div class="map-card__wrap">
+							<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+							<div class="map-card__content">
+								<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+								<div class="card__details">
+									<span class='stars'>5</span>
+									<span class='comments'>5</span>
+								</div>
+								<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+								<div><span class="card__label open">Зараз відчинено</span>	</div>
+							</div>
+						</div>
+					</a>
+					<a class="map-card">
+						<span class="map-card__more"></span>
+						<div class="map-card__wrap">
+							<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+							<div class="map-card__content">
+								<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+								<div class="card__details">
+									<span class='stars'>5</span>
+									<span class='comments'>5</span>
+								</div>
+								<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+								<div><span class="card__label open">Зараз відчинено</span>	</div>
+							</div>
+						</div>
+					</a>
+					<a class="map-card">
+						<span class="map-card__more"></span>
+						<div class="map-card__wrap">
+							<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+							<div class="map-card__content">
+								<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+								<div class="card__details">
+									<span class='stars'>5</span>
+									<span class='comments'>5</span>
+								</div>
+								<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+								<div><span class="card__label open">Зараз відчинено</span>	</div>
+							</div>
+						</div>
+					</a>
+					<a class="map-card">
+						<span class="map-card__more"></span>
+						<div class="map-card__wrap">
+							<img class='map-card__pic' src="./img/assets/pub.png" alt="">
+							<div class="map-card__content">
+								<h5 class='card__title'>Стейк-хаус «The Гриль»</h5>
+								<div class="card__details">
+									<span class='stars'>5</span>
+									<span class='comments'>5</span>
+								</div>
+								<p class='contact-item'>м. Львів, вул. Вірменська, 2 / вхід з вул. Театральна </p>
+								<div><span class="card__label open">Зараз відчинено</span>	</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="nearest-pubs__popup popup hidden">
+					<span class='cross cross_sm'></span>	
+					<img src="./img/warning.svg" alt="">
+					<p>На жаль, вибрані тобою сорти пива вже випили в усіх пабах твого міста</p>
+					<button class='btn'>Обрати інше</button>
+				</div>
+				<div class="search-plate">
+					<div class="search-plate__header">
+						<div class='search-plate__title'>
+							<svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.5 0C3.34091 0 0 3.34091 0 7.5 0 11.6591 3.34091 15 7.5 15c4.1591 0 7.5-3.3409 7.5-7.5C15 3.34091 11.6591 0 7.5 0zm4.3295 5.14773L6.375 10.8068c-.06818.0682-.13636.1023-.23864.1023-.10227 0-.20454-.0341-.23863-.1023L3.23864 7.94318 3.17045 7.875c-.06818-.06818-.10227-.17045-.10227-.23864 0-.06818.03409-.17045.10227-.23863l.47728-.47728c.13636-.13636.34091-.13636.47727 0l.03409.0341 1.875 2.01136c.06818.06818.17046.06818.23864 0l4.56817-4.73864h.0341c.1364-.13636.3409-.13636.4773 0l.4772.47728c.1364.10227.1364.30681 0 .44318z" fill="url(#paint0_linear)"/>
+								<defs>
+									<linearGradient id="paint0_linear" y1="7.5" x2="15" y2="7.5" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#EFB41C"/>
+									<stop offset="1" stop-color="#FF8A00"/>
+									</linearGradient>
+								</defs>
+							</svg>
+							Асортимент крафтового пива
+						</div>
+						<span class='search-plate__handle'></span>
+					</div>
+					<ul class='search-plate__list'>
+						<li>
+							<label class='checkbox-label'>
+								<input type="checkbox">	
+								Лагер
+							</label>
+						</li>
+						<li>
+							<label class='checkbox-label'>
+								<input type="checkbox">	
+								Лагер
+							</label>
+						</li>
+						<li>
+							<label class='checkbox-label'>
+								<input type="checkbox">	
+								Лагер
+							</label>
+						</li>
+						<li>
+							<label class='checkbox-label'>
+								<input type="checkbox">	
+								Лагер
+							</label>
+						</li>
+						<li>
+							<label class='checkbox-label'>
+								<input type="checkbox">	
+								Лагер
+							</label>
+						</li>
+						<li>
+							<label class='checkbox-label'>
+								<input type="checkbox">	
+								Лагер
+							</label>
+						</li>
+						<li>
+							<label class='checkbox-label'>
+								<input type="checkbox">	
+								Лагер
+							</label>
+						</li>
+						<li>
+							<label class='checkbox-label'>
+								<input type="checkbox">	
+								Лагер
+							</label>
+						</li>
+						<li>
+							<label class='checkbox-label'>
+								<input type="checkbox">	
+								Лагер
+							</label>
+						</li>
+						<li>
+							<label class='checkbox-label'>
+								<input type="checkbox">	
+								Лагер
+							</label>
+						</li>
+						<li>
+							<label class='checkbox-label'>
+								<input type="checkbox">	
+								Лагер
+							</label>
+						</li>
+						<li>
+							<label class='checkbox-label'>
+								<input type="checkbox">	
+								Лагер
+							</label>
+						</li>
+						<li>
+							<label class='checkbox-label'>
+								<input type="checkbox">	
+								Лагер
+							</label>
+						</li>
+					</ul>
+					<div class="search-plate__footer">
+						<button class='btn btn_transparent'>Очистити все</button>
+						<button class='btn'>Застосувати</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class='footer'>
+		<div class="container">
+			<div class="footer__top">
+				<div id="btn-scroll"><svg><use xlink:href="#i-arrow"></use></svg></div>
+				<div class="line"></div>
+				<img class="footer__logo" src="./img/logo_bw.svg" alt="Craft beer">
+			</div>
+			<div class="footer__content">
+				<div class="footer__wrap">
+					<div class="footer__item">
+						<h6 class="h6 footer__subtitle">Контактна інформація</h6>
+						<ul>
+							<li class='contact-item tel'>
+								<a href="tel:+38067543545" class='link'>+38 (067) 543-54-5</a>
+							</li>
+							<li class='contact-item envelope'>
+								<a href="mailto:сraftbeer@mail" class='link'>сraftbeer@mail</a>
+							</li>
+							<li class='contact-item clock'>Пн-Пт 09:00-18:00</li>
+						</ul>
+					</div>
+					<div class="footer__item">
+						<h6 class="h6 footer__subtitle">Ми в соціальних мережах</h6>
+						<div class="socials">
+							<a href="#" class='social-link'>
+								<img src="./img/fb.svg" alt="">
+							</a>
+							<a href="#" class='social-link'>
+								<img src="./img/yt.svg" alt="">
+							</a>
+							<a href="#" class='social-link'>
+								<img src="./img/in.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__wrap">
+					<div class="footer__item">
+						<h6 class="h6 footer__subtitle">Підписатись на розсилку</h6>
+						<form class='footer__form'>
+							<input class='form__item input-text' type="mail" placeholder='Ваш e-mail'>
+							<button class='btn btn_100 form__item' type='submit'>Підписатись</button>
+						</form>
+					</div>
+					<div class="footer__item">
+						<h6 class="h6 footer__subtitle">Інформація</h6>
+						<ul class='contact-list'>
+							<li class='list-item'>
+								<a href="#" class='link'>Блог</a>
+							</li>
+							<li class='list-item'>
+								<a href="#" class='link'>Про клуб</a>
+							</li>
+							<li class='list-item'>
+								<a href="#" class='link'>Контакти</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copyrights">© 2018 craftBeer All rights reserved.</div>
+		</div>
+	</footer>
+	<div id="popup-login" class="overlay hidden">
+		<div class="popup popup_login">
+			<img class='popup__pic' src="./img/popup_logo.png" alt="craftBeer logo">
+			<span class='cross'></span>	
+			<h3 class='h3'>Увійти</h3>
+			<p class='small'>Щоб залишити відгук</p>
+			<form>
+				<input class='input popup__input' type="email" placeholder="Електронна пошта">
+				<input class='input popup__input' type="text" placeholder="Пароль">
+				<a href="#" class='link popup_login__forget extra-small'>Забули пароль?</a>
+				<button type="submit" class="btn btn_100">увійти</button>
+			</form>
+			<button class="btn btn_100 btn_fb">увійти з facebook</button>
+			<a href="#" class='link extra-small'>Реєстрація</a>
+		</div>
+	</div>		
+	<div id="popup-register" class="overlay hidden">
+		<div class="popup popup_register">
+			<img class='popup__pic' src="./img/popup_logo.png" alt="craftBeer logo">
+			<span class='cross'></span>	
+			<h3 class='h3'>Вступити до клубу</h3>
+			<p class='small'>Зареєструйся, щоб приєднатись до справжніх гурманів, яким не потрібно імітації, тільки справжнє, крафтове пиво.</p>
+			<form>
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<input class='input popup__input' type="text" placeholder="Ім'я">
+						<input class='input popup__input' type="email" placeholder="Електронна пошта">
+					</div>
+					<div class="col-12 col-lg-6">
+						<input class='input popup__input' type="text" placeholder="Пароль">
+						<input class='input popup__input' type="text" placeholder="Підтвердити пароль">
+					</div>
+				</div>
+				<label class='popup__label'>
+					<input type="checkbox">	
+					Підписатись на розсилку	
+				</label>
+				<label class='popup__label'>
+					<input type="checkbox">	
+					Реєструючись, я погоджуюсь з
+					<a href="#" class='link extra-small'>умовами і політикою конфіденційності</a>
+				</label>
+				<button type="submit" class="btn btn_100">Зареєструватись</button>
+			</form>
+			<button class="btn btn_100 btn_fb">увійти з facebook</button>
+			<span class='small'>Вже зареєстрований?
+				<a href="#" class='link extra-small'>ВХІД</a>
+			</span>
+		</div>
+	</div>
+	<div id="loader" class='loader hidden'><svg><use xlink:href="#loader-icon"></use></svg></div>
+	<script src="js/common.js"></script>
+	<script src="js/sprite.js"></script>
+	</body>
+	</html>
